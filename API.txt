@@ -1,0 +1,39 @@
+Feel free to change it!
+
+URL: /login
+Method: POST
+Request Format: 
+{
+email: <String>,
+password: <String>
+}
+Respond Format:
+{
+success: <Boolean>
+}
+
+URL: /register
+Method: POST
+Request Format:
+{
+email: <String>,
+password: <String>
+}
+
+URL: /upload
+Method: POST
+Request Format:
+{
+file
+}
+Respond Format:
+{
+success: <Boolean>,
+accessUrl: <String>,
+created: <Date>,
+expire: <Date>
+}
+
+URL: /download/:id
+Mechod: GET
+Respond with file
