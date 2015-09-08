@@ -45,4 +45,8 @@ app.use(session({
 /* setting up routers */
 app.use('/', express.static('./public'))
 
-app.listen(8080)
+app.use('/', function(req, res){
+	res.send("Ian is gay")
+})
+
+app.listen(9095)
