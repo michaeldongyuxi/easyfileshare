@@ -7,6 +7,11 @@ var mongoose = require('mongoose')
 var jwt = require('jsonwebtoken')
 var app = express()
 
+var login = require('./routes/login.js')
+var register = require('./routes/register.js')
+var upload = require('./routes/upload.js');
+var download = require('./routes/download.js')
+
 var mongodbURI = "mongodb://localhost/easyfileshare"
 
 var options = {
@@ -43,7 +48,12 @@ app.use(session({
 }))
 
 /* setting up routers */
-app.use('/', express.static('./public'))
+app.use('/', express.static('../frontend'))
+
+app.use('/login', login.router)
+app.use('/register', register.router)
+app.use('/upload', upload.router)
+app.use('/download', download.router)
 
 app.use('/', function(req, res){
 	res.send("Ian is gay")
