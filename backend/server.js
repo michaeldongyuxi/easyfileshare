@@ -7,10 +7,10 @@ var mongoose = require('mongoose')
 var jwt = require('jsonwebtoken')
 var app = express()
 
-var login = require('./routes/login.js')
-var register = require('./routes/register.js')
-var upload = require('./routes/upload.js');
-var download = require('./routes/download.js')
+var login_router = require('./routes/login.js')
+var register_router = require('./routes/register.js')
+var upload_router = require('./routes/upload.js');
+var download_router = require('./routes/download.js')
 
 var mongodbURI = "mongodb://localhost/easyfileshare"
 
@@ -47,13 +47,28 @@ app.use(session({
 	})
 }))
 
+app.use(bodyParser.json())
+
 /* setting up routers */
 app.use('/', express.static('../frontend'))
 
-app.use('/login', login.router)
-app.use('/register', register.router)
-app.use('/upload', upload.router)
-app.use('/download', download.router)
+app.use('/login', login_router.router)
+app.use('/register', register_router.router)
+app.use('/upload', upload_router.router)
+app.use('/download', download_router.router)
+
+var user = connection.model('user', require('./models/user.js'), 'users')
+var file = connection.model('file', require('./models/file.js'), 'files')
+
+var models = {
+	user_model: user,
+	file_model: file
+}
+
+login_router.modelSetup(models)
+register_router.modelSetup(models)
+upload_router.modelSetup(models)
+download_router.modelSetup(models)
 
 app.use('/', function(req, res){
 	res.send("Ian is gay")
