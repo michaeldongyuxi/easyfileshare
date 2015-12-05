@@ -46,11 +46,18 @@ router.post('/', upload.single('file'), function(req, res){
 				//User logged in
 				user.update({email: req.body.email}, {files: {$push: file_id}}, function(err, data){
 					if(!err){
-						res.json({
-							success: true,
-							msg: "",
-							file_id: file_id
+						file.insert(file_obj, {}, function(err, data){
+							if(!err){
+								res.json({
+									success: true,
+									file_id: file_id
+								})
+							} else {
+								console.log(err)
+							}
 						})
+					} else {
+						console.log(err)
 					}
 				})
 			} else {

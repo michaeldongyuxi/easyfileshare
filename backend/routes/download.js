@@ -11,11 +11,29 @@ function modelSetup(models){
 
 router.get('/:file_id', function(req, res){
 	var file_id = req.params.file_id
-	var fileDestination
 	file.findOne({file_id: file_id}, {}, function(err, data){
-		var fileDestination = data.path
+		if(!err){
+			if(!data){
+				res.json({
+					success: false,
+					msg: "File not found"
+				})
+			} else {
+				res.download(data.path, data.original_name, function(err){
+					if(err){
+						console.log(err)
+					} else {
+						console.log("ok")
+					}
+				})
+			}
+		} else {
+			console.log(err)
+			res.json({
+				success: false
+			})
+		}
 	})
-	res.send("Hello")
 });
 
 exports.router = router

@@ -9,8 +9,7 @@ function modelSetup(models){
 	file = models.file_model
 }
 
-router.get('/', function(req, res){
-	res.send("Hello")
+router.post('/', function(req, res){
 	var email = req.body.email
 	var password = req.body.password
 
