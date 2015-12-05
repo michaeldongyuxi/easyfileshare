@@ -11,6 +11,8 @@ var login_router = require('./routes/login.js')
 var register_router = require('./routes/register.js')
 var upload_router = require('./routes/upload.js');
 var download_router = require('./routes/download.js')
+var get_groups_router = require('./routes/get_groups.js')
+var create_group_router = require('./routes/create_group.js')
 
 var mongodbURI = "mongodb://localhost/easyfileshare"
 
@@ -47,7 +49,8 @@ app.use(session({
 	})
 }))
 
-app.use(bodyParser.json())
+app.use(bodyParser.json({strict: false}))
+app.use(bodyParser.urlencoded({ extended: false }))
 
 /* setting up routers */
 app.use('/', express.static('../frontend'))
@@ -56,6 +59,8 @@ app.use('/login', login_router.router)
 app.use('/register', register_router.router)
 app.use('/upload', upload_router.router)
 app.use('/download', download_router.router)
+app.use('/get_groups', get_groups_router.router)
+app.use('/create_group', create_group_router.router)
 
 var user = connection.model('user', require('./models/user.js'), 'users')
 var file = connection.model('file', require('./models/file.js'), 'files')
@@ -69,6 +74,8 @@ login_router.modelSetup(models)
 register_router.modelSetup(models)
 upload_router.modelSetup(models)
 download_router.modelSetup(models)
+get_groups_router.modelSetup(models)
+create_group_router.modelSetup(models)
 
 app.use('/', function(req, res){
 	res.send("Ian is gay")

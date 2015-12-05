@@ -16,7 +16,8 @@ router.get('/', function(req, res){
 router.post('/', function(req, res){
 	var obj = {
 		email: req.body.email,
-		password: req.body.password
+		password: req.body.password,
+		groups: [{group_name: "Default", files: []}]
 	}
 	var user_obj = new user(obj)
 	user_obj.save(function(err, result){
@@ -29,10 +30,6 @@ router.post('/', function(req, res){
 				msg: ""
 			})
 		}
-	})
-	
-	res.json({
-		success: true
 	})
 })
 

@@ -29,7 +29,6 @@ router.post('/', upload.single('file'), function(req, res){
 */
 
 	var file_id = getID()
-	console.log(req.file);
 
 	var file_obj = {
 		file_id: file_id,
@@ -37,24 +36,21 @@ router.post('/', upload.single('file'), function(req, res){
 		original_name: req.file.originalname
 		//uploaded_on: Date.now()
 	}
+	
+	var group_name = req.body.group_name
 
 	file_obj = new file(file_obj)
 
 	file_obj.save(function(err, result){
 		if(!err){
-			if(req.session.email){
+			if(req.body.email){
 				//User logged in
-				user.update({email: req.body.email}, {files: {$push: file_id}}, function(err, data){
+				//users.update({email: "michaeldongyuxi@gmail.com", "groups.group_name": "Default"}, {$push: {"groups.$.files": "Helloyoyo"}})
+				user.update({email: req.body.email, "groups.group_name": group_name}, {$push: {"groups.$.files": file_id}}, function(err, result){
 					if(!err){
-						file.insert(file_obj, {}, function(err, data){
-							if(!err){
-								res.json({
-									success: true,
-									file_id: file_id
-								})
-							} else {
-								console.log(err)
-							}
+						res.json({
+							success: true,
+							file_id: file_id
 						})
 					} else {
 						console.log(err)
@@ -62,6 +58,7 @@ router.post('/', upload.single('file'), function(req, res){
 				})
 			} else {
 				//Not logged in
+				console.log("Hello2")
 				res.json({
 					success: true,
 					msg: "",
