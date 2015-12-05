@@ -37,7 +37,7 @@ router.post('/', upload.single('file'), function(req, res){
 		//uploaded_on: Date.now()
 	}
 	
-	var group_name = req.body.group_name
+	var group_name = req.body.group_name || "Default"
 
 	file_obj = new file(file_obj)
 

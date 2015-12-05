@@ -31,7 +31,9 @@ RESPONSE:
 
 REQUEST:
 {
-	file: ImageFile
+	file: ImageFile,
+	email: @String(Optional, for logged in user),
+	group_name: @String(Optional, defalut is "Default" group)
 }
 
 RESPONSE:
