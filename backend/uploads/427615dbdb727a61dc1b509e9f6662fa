@@ -1,0 +1,12 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+<form action="http://54.183.198.80:9095/upload" method="POST" enctype="multipart/form-data">
+  <input type='file' name='file'/>
+  <div></div>
+  <input type='submit'/>
+</form>
+  </body>
+</html>

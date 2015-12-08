@@ -1534,3 +1534,191 @@
 2015-12-05T14:41:08.792-0600 I NETWORK  [conn718] end connection 127.0.0.1:54973 (2 connections now open)
 2015-12-05T14:41:08.792-0600 I NETWORK  [conn717] end connection 127.0.0.1:54972 (2 connections now open)
 2015-12-05T14:46:33.827-0600 I NETWORK  [conn291] end connection 127.0.0.1:53538 (0 connections now open)
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module 'multer'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/ubuntu/easyfileshare/backend/routes/upload.js:4:14)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/ubuntu/easyfileshare/backend/server.js:12:21)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+DB Connected
+SessionDB Connected
+SyntaxError: Unexpected number
+    at Object.parse (native)
+    at parse (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/types/json.js:88:17)
+    at /home/ubuntu/easyfileshare/node_modules/body-parser/lib/read.js:116:18
+    at invokeCallback (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:262:16)
+    at done (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:251:7)
+    at IncomingMessage.onEnd (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:308:7)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:920:16
+    at process._tickCallback (node.js:415:13)
+SyntaxError: Unexpected token g
+    at Object.parse (native)
+    at parse (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/types/json.js:88:17)
+    at /home/ubuntu/easyfileshare/node_modules/body-parser/lib/read.js:116:18
+    at invokeCallback (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:262:16)
+    at done (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:251:7)
+    at IncomingMessage.onEnd (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:308:7)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:920:16
+    at process._tickCallback (node.js:415:13)
+Helloyoyo
+{ ok: 1, n: 1 }
+yoyoyo=====
+{ email: 'michaeldongyuxi@gmail.com', group_name: 'Helloyoyo' }
+yoyoyo=====
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+TypeError: Cannot read property 'destination' of undefined
+    at numArray (/home/ubuntu/easyfileshare/backend/routes/upload.js:35:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at multerMiddleware (/home/ubuntu/easyfileshare/node_modules/multer/lib/make-middleware.js:18:41)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+Hello2
+TypeError: Cannot read property 'destination' of undefined
+    at numArray (/home/ubuntu/easyfileshare/backend/routes/upload.js:35:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at multerMiddleware (/home/ubuntu/easyfileshare/node_modules/multer/lib/make-middleware.js:18:41)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+Hello2
+ok
+Hello2
+ok
+Hello2
+ok
+Hello2
+ok
+Hello2
+ok
+ok
+ok
+ok
+Hello2
+ok
+ok
+Hello2
+ok
+Hello2
+ok
+ok
+Hello2
+Hello2
+ok
+ok
+Hello2
+ok
+Hello2
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+Hello2
+ok
+Hello2
+ok
+Hello2
+DB Connected
+SessionDB Connected
+DB Connected
+SessionDB Connected
+Hello2
+ok
+Hello2
+ok
+ok
+ok
+ok
+Hello2
+ok
+Hello2
+ok
+Hello2
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+DB Connected
+SessionDB Connected

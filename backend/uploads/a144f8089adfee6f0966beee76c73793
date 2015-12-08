@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://54.183.198.80:9095/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
+<body>
+	<form action="http://54.183.198.80:9095/upload" method="POST" enctype="multipart/form-data">
+		<input type="file" name="file">
+		<div></div>
+		<input type="submit">
+	</form>
+	<div>Download demo:</div>
+	file_id: <input type="text" id="file_id">
+	<button onclick="download()">Download</button>
+	
+	<script>
+		function download(){
+			var file_id = document.getElementById("file_id").value;
+			window.location.href = "/download/+file_id"
+		}
+	</script>
+
+</body></html>
