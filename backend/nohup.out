@@ -1864,3 +1864,35 @@ ok
 ok
 DB Connected
 SessionDB Connected
+Hello2
+ok
+Hello2
+ok
+ok
+Hello2
+ok
+Hello2
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+ok
+ok
+Hello2
+ok
+ok
+Hello2
+ok
+Hello2
+ok
+ok
+ok
+
+/home/ubuntu/easyfileshare/backend/routes/login.js:17
+		if(data.password == password){
+		       ^
+TypeError: Cannot read property 'password' of null
+    at Query.<anonymous> (/home/ubuntu/easyfileshare/backend/routes/login.js:17:10)
+    at /home/ubuntu/easyfileshare/node_modules/mongoose/node_modules/kareem/index.js:177:19
+    at /home/ubuntu/easyfileshare/node_modules/mongoose/node_modules/kareem/index.js:109:16
+    at process._tickCallback (node.js:415:13)
+DB Connected
+SessionDB Connected

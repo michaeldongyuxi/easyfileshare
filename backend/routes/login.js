@@ -14,6 +14,7 @@ router.post('/', function(req, res){
 	var password = req.body.password
 
 	user.findOne({email: email}, {}, function(err, data){
+		if(!err && data){
 		if(data.password == password){
 			req.session.email = email;
 			res.json({
@@ -25,6 +26,11 @@ router.post('/', function(req, res){
 				success: false,
 				msg: ""
 			})
+		}} else {
+			res.json({
+				success: false,
+				msg: ""
+			})	
 		}
 	})
 });
