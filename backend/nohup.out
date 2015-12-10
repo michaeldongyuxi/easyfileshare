@@ -1896,3 +1896,20 @@ TypeError: Cannot read property 'password' of null
     at process._tickCallback (node.js:415:13)
 DB Connected
 SessionDB Connected
+{ email: 'fewfe',
+  password: '123',
+  _id: 566a08be8463ccb31851b36e,
+  groups: 
+   [ { group_name: 'Default',
+       _id: 566a08be8463ccb31851b36f,
+       files: [] } ],
+  files: [] }
+Error
+{ email: 'michaellikesdick',
+  password: 'dick123',
+  _id: 566a08ec8463ccb31851b372,
+  groups: 
+   [ { group_name: 'Default',
+       _id: 566a08ec8463ccb31851b373,
+       files: [] } ],
+  files: [] }
