@@ -1722,3 +1722,145 @@ ok
 ok
 DB Connected
 SessionDB Connected
+DB Connected
+SessionDB Connected
+{ [Error: ENOENT, stat '/home/ubuntu/easyfileshare/backend/uploads/ac70e92f36a1fd9599d350232c017454']
+  errno: 34,
+  code: 'ENOENT',
+  path: '/home/ubuntu/easyfileshare/backend/uploads/ac70e92f36a1fd9599d350232c017454',
+  expose: false,
+  statusCode: 404,
+  status: 404 }
+{ [Error: ENOENT, stat '/home/ubuntu/easyfileshare/backend/uploads/ac70e92f36a1fd9599d350232c017454']
+  errno: 34,
+  code: 'ENOENT',
+  path: '/home/ubuntu/easyfileshare/backend/uploads/ac70e92f36a1fd9599d350232c017454',
+  expose: false,
+  statusCode: 404,
+  status: 404 }
+Hello2
+ok
+{ [Error: ENOENT, stat '/home/ubuntu/easyfileshare/backend/uploads/ac70e92f36a1fd9599d350232c017454']
+  errno: 34,
+  code: 'ENOENT',
+  path: '/home/ubuntu/easyfileshare/backend/uploads/ac70e92f36a1fd9599d350232c017454',
+  expose: false,
+  statusCode: 404,
+  status: 404 }
+ok
+Hello2
+ok
+Hello2
+ok
+Hello2
+Hello2
+ok
+Hello2
+ok
+Hello2
+ok
+DB Connected
+SessionDB Connected
+Hello2
+ok
+Hello2
+ok
+Hello2
+ok
+ok
+Hello2
+ok
+ok
+ok
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+TypeError: Cannot read property 'destination' of undefined
+    at numArray (/home/ubuntu/easyfileshare/backend/routes/upload.js:35:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at Object.<anonymous> (/home/ubuntu/easyfileshare/node_modules/multer/lib/make-middleware.js:52:37)
+    at Object.immediate._onImmediate (timers.js:348:16)
+    at processImmediate [as _immediateCallback] (timers.js:330:15)
+TypeError: Cannot read property 'destination' of undefined
+    at numArray (/home/ubuntu/easyfileshare/backend/routes/upload.js:35:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at Object.<anonymous> (/home/ubuntu/easyfileshare/node_modules/multer/lib/make-middleware.js:52:37)
+    at Object.immediate._onImmediate (timers.js:348:16)
+    at processImmediate [as _immediateCallback] (timers.js:330:15)
+ok
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+ok
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+ok
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+TypeError: Cannot read property 'destination' of undefined
+    at numArray (/home/ubuntu/easyfileshare/backend/routes/upload.js:35:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at Object.<anonymous> (/home/ubuntu/easyfileshare/node_modules/multer/lib/make-middleware.js:52:37)
+    at Object.immediate._onImmediate (timers.js:348:16)
+    at processImmediate [as _immediateCallback] (timers.js:330:15)
+Hello2
+ok
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+ok
+ok
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+{ [Error: Request aborted] code: 'ECONNABORTED' }
+{ [Error: write EPIPE] code: 'EPIPE', errno: 'EPIPE', syscall: 'write' }
+ok
+ok
+Hello2
+Hello2
+ok
+Hello2
+ok
+ok
+DB Connected
+SessionDB Connected

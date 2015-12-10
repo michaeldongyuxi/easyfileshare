@@ -23,6 +23,10 @@ router.post('/', function(req, res){
 	user_obj.save(function(err, result){
 		if(err){
 			console.log("Error");
+			res.json({
+					success: false,
+					msg: "DUPKEY"
+				})
 		} else {
 			console.log(result);
 			res.json({
