@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>jBox</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/images/favicon.ico"/>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+  <script src="/javascripts/Register.js"></script>
 </head>
-<body>
-	<form action="/upload" method="POST" enctype="multipart/form-data">
-		<input type='file' name='file'/>
-		<div></div>
-		<input type='submit'/>
-	</form>
-	<div>Download Demo:</div>
-	file_id: <input type="text" id="file_id"/>
-	<button onclick="download()">Download</button>
-<script>
-	function download(){
-		var file_id = document.getElementById("file_id").value;
-		if(!file_id){
-		alert("file_id is required")
-		} else {
-			window.location.href = "/download/"+file_id;
-		}
-	}
-</script>
+
+<body ng-app="register" ng-controller="RegisterCtrl" style="overflow:hidden">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="font-size:35px; padding-left:50px;"><b>jBox</b></a>
+      </div>
+    </div><!--/.container-fluid -->
+  </nav>
+
+  <div class="row" style="padding-top:50px;">
+      <div class="col-md-8 col-md-offset-5">
+    <p style="font-size:60px; font-family:Oxygen;">
+    	<b>jBox</b>
+    </p>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-8 col-md-offset-3">
+    <p style="font-size:40px;">Easily share and annotate screenshots</p>
+    </div>
+  </div>
+
+  <div class="row" style="padding-top:40px;">
+    <div class="col-md-2 col-md-offset-2" style="padding-top:60px">
+      <p style="font-size:35px;">Download the program here!</p>
+  <button type="button" class="btn btn-info">Download</button>
+
+    </div>
+
+  <form ng-submit="submit()"
+    <div class="col-md-4 col-md-offset-1">
+    <p style="font-size:25px; padding-bottom:10px;">Create an account!</p>
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2" style="padding-right:60px;">username</span>
+        <input type="text" class="form-control" placeholder="username" aria-describedby="basic-addon2" ng-model="username">
+      </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2" style="padding-right:62px;">password</span>
+        <input type="password" class="form-control" placeholder="enter password" aria-describedby="basic-addon2" ng-model="password">
+      </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2">confirm password</span>
+        <input type="password" class="form-control" placeholder="confirm password" aria-describedby="basic-addon2">
+      </div>
+        </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+    <p ng-show="error === true" style="font-size:20px; padding-top:10px; color:red;"> {{ errorMessage }} </p>
+    <p style="padding-top:40px; font-size:40px;"> Or login <a href="login.html">here!</a></p>
+   </form>
+  </div>
+  </div>	
+
+
+      
+
 </body>
+
 </html>
