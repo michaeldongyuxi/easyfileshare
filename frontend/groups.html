@@ -70,7 +70,7 @@
         <tbody>
           <tr ng-repeat="file in files">
             <td> File {{ $index+1 }}
-            <td> <a href="{{ '/download/file' }}"><button type="button" class="btn btn-info">Download</button></a> </td>
+            <td> <a href="/download/{{ file }}"><button type="button" class="btn btn-info">Download</button></a> </td>
           </tr>                    
         </tbody>      
       </table>
