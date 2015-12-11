@@ -69,7 +69,7 @@
 
         <tbody>
           <tr ng-repeat="file in files">
-            <td> File {{ countUp() }}
+            <td> File {{ counter = counter + 1 }}
             <td> <a href="{{ '/download/file' }}"><button type="button" class="btn btn-info">Download</button></a> </td>
           </tr>                    
         </tbody>      

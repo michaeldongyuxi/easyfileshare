@@ -18,12 +18,6 @@ app.controller('GroupsCtrl', function ($scope, groupsFactory) {
   var groupsPromise = groupsFactory.getData();
 
   $scope.counter = 0;
-
-  $scope.countUp = function(){
-    $scope.counter++;
-    return $scope.counter;
-  }
-
   $scope.groupSelected = false;
   $scope.selectedGroup = null;
   $scope.files = [];
@@ -43,26 +37,19 @@ app.controller('GroupsCtrl', function ($scope, groupsFactory) {
 
   });
 
+  $scope.countUp = function(){
+    counter++;
+    return counter;
+  }
+
   // file schema: file_id, path, original_name, uploaded_on
   $scope.getFiles = function(groupname){
     $scope.groupSelected = true;
     $scope.selectedGroup = groupname;
 
-    // var returnIndex = findGroup(groupname);
-
     $scope.files = $scope.selectedGroup.files;
     console.log($scope.files);
 
-  }
-
-  function findGroup(groupname){
-    for(var i = 0; i < $scope.groups.length; i++){
-      if($scope.groups[i].group_name == groupname){
-        return i;
-      }
-    }
-
-    return 0;
   }
 
 });
