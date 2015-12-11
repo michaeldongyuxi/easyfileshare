@@ -28,8 +28,8 @@
   <div ng-hide="groupSelected === true">
     <div class="row" style="padding-top:50px;">
         <div class="col-md-7 col-md-offset-3">
-  		<p style="font-size:40px; padding-bottom:20px;">Groups</p>
-  	  </div>
+      <p style="font-size:40px; padding-bottom:20px;">Groups</p>
+      </div>
     </div>
 
     <div class="container col-md-offset-2">
@@ -62,17 +62,15 @@
       <table class = "table">
         <thead>
           <tr>
-            <th class="col-md-2"> Name </th>
-            <th class="col-md-2"> Upload Date </th>
-            <th class="col-md-3"> File Link </th>
+            <th class="col-md-2"> File </th>
+            <th class="col-md-2"> Download </th>
           </tr>
         <thead>
 
         <tbody>
           <tr ng-repeat="file in files">
-            <td> {{ file.original_name }} </td>
-            <td> {{ file.uploaded_on }} </td>
-            <td> <a href="{{ file.path }}"><button type="button" class="btn btn-info"></a> </td>
+            <td> File {{ countUp() }}
+            <td> <a href="{{ '/download/file' }}"><button type="button" class="btn btn-info">Download</button></a> </td>
           </tr>                    
         </tbody>      
       </table>

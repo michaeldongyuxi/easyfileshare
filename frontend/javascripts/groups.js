@@ -17,6 +17,13 @@ app.controller('GroupsCtrl', function ($scope, groupsFactory) {
   
   var groupsPromise = groupsFactory.getData();
 
+  $scope.counter = 0;
+
+  $scope.countUp = function(){
+    $scope.counter++;
+    return $scope.counter;
+  }
+
   $scope.groupSelected = false;
   $scope.selectedGroup = null;
   $scope.files = [];
@@ -41,10 +48,11 @@ app.controller('GroupsCtrl', function ($scope, groupsFactory) {
     $scope.groupSelected = true;
     $scope.selectedGroup = groupname;
 
-    var returnIndex = findGroup(groupname);
+    // var returnIndex = findGroup(groupname);
 
-    $scope.files = $scope.groups[returnIndex].files;
-    
+    $scope.files = $scope.selectedGroup.files;
+    console.log($scope.files);
+
   }
 
   function findGroup(groupname){
