@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<form action="/upload" method="POST" enctype="multipart/form-data">
+		<input type='file' name='file'/>
+		<div></div>
+		<input type='submit'/>
+	</form>
+	<div>Download Demo:</div>
+	file_id: <input type="text" id="file_id"/>
+	<button onclick="download()">Download</button>
+<script>
+	function download(){
+		var file_id = document.getElementById("file_id").value;
+		if(!file_id){
+		alert("file_id is required")
+		} else {
+			window.location.href = "/download/"+file_id;
+		}
+	}
+</script>
+</body>
+</html>
