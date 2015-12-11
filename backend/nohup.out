@@ -1913,3 +1913,138 @@ Error
        _id: 566a08ec8463ccb31851b373,
        files: [] } ],
   files: [] }
+{ email: 'MICHAELISGAY',
+  password: 'DICK',
+  _id: 566a0c178463ccb31851b374,
+  groups: 
+   [ { group_name: 'Default',
+       _id: 566a0c178463ccb31851b375,
+       files: [] } ],
+  files: [] }
+{ email: 'david',
+  password: 'david',
+  _id: 566a0d048463ccb31851b376,
+  groups: 
+   [ { group_name: 'Default',
+       _id: 566a0d048463ccb31851b377,
+       files: [] } ],
+  files: [] }
+{ email: '123sdfafds',
+  password: 'asdffads',
+  _id: 566a0d348463ccb31851b378,
+  groups: 
+   [ { group_name: 'Default',
+       _id: 566a0d348463ccb31851b379,
+       files: [] } ],
+  files: [] }
+TypeError: Cannot read property 'destination' of undefined
+    at numArray (/home/ubuntu/easyfileshare/backend/routes/upload.js:35:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at multerMiddleware (/home/ubuntu/easyfileshare/node_modules/multer/lib/make-middleware.js:18:41)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+TypeError: Cannot read property 'destination' of undefined
+    at numArray (/home/ubuntu/easyfileshare/backend/routes/upload.js:35:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at multerMiddleware (/home/ubuntu/easyfileshare/node_modules/multer/lib/make-middleware.js:18:41)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+TypeError: Cannot read property 'destination' of undefined
+    at numArray (/home/ubuntu/easyfileshare/backend/routes/upload.js:35:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at multerMiddleware (/home/ubuntu/easyfileshare/node_modules/multer/lib/make-middleware.js:18:41)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ubuntu/easyfileshare/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+Error: request entity too large
+    at readStream (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:106:12)
+    at read (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/read.js:76:3)
+    at urlencodedParser (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/types/urlencoded.js:109:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/types/json.js:107:37)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at session (/home/ubuntu/easyfileshare/node_modules/express-session/index.js:398:7)
+Error: request entity too large
+    at readStream (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:106:12)
+    at read (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/read.js:76:3)
+    at urlencodedParser (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/types/urlencoded.js:109:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/types/json.js:107:37)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at session (/home/ubuntu/easyfileshare/node_modules/express-session/index.js:398:7)
+Hello2
+Error: request entity too large
+    at readStream (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/ubuntu/easyfileshare/node_modules/body-parser/node_modules/raw-body/index.js:106:12)
+    at read (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/read.js:76:3)
+    at jsonParser (/home/ubuntu/easyfileshare/node_modules/body-parser/lib/types/json.js:121:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at session (/home/ubuntu/easyfileshare/node_modules/express-session/index.js:398:7)
+    at Layer.handle [as handle_request] (/home/ubuntu/easyfileshare/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/easyfileshare/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/ubuntu/easyfileshare/node_modules/express/lib/middleware/init.js:33:5)
+Hello2
+Hello2
+ok
+ok
+ok
+ok
+ok
+Hello2
