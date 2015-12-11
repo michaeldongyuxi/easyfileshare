@@ -78,7 +78,7 @@ get_groups_router.modelSetup(models)
 create_group_router.modelSetup(models)
 
 app.use('/', function(req, res){
-	res.send("Ian is gay")
+	res.send("404 Page not found")
 })
 
 app.listen(80)
