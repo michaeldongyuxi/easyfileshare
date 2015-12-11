@@ -3,7 +3,7 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
 <body>
-	<form action="http://54.183.198.80/upload" method="POST" enctype="multipart/form-data">
+	<form action="/upload" method="POST" enctype="multipart/form-data">
 		File: <input type="file" name="file">
 		User: <input type="text" name="email">
 		Group: <input type="text" name="group_name">
@@ -20,7 +20,7 @@
 		if(!file_id){
 		alert("file_id is required")
 		} else {
-			window.location.href = "http://54.183.198.80/download/"+file_id;
+			window.location.href = "/download/"+file_id;
 		}
 	}
 </script>

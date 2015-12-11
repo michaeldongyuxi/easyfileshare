@@ -1,6 +1,7 @@
 var express = require('express')
 var router = express.Router()
 var fs = require('fs')
+var path = require('path')
 var user
 var file
 
@@ -19,11 +20,22 @@ router.get('/:file_id', function(req, res){
 					msg: "File not found"
 				})
 			} else {
-				res.download(data.path, data.original_name, function(err){
+				// res.download(data.path, data.original_name, function(err){
+				// 	if(err){
+				// 		console.log(err)
+				// 	} else {
+				// 		console.log("ok")
+				// 	}
+				// })
+				var options = {
+					headers: {
+					'Content-Disposition': 'inline; filename='+'"'+data.original_name+'"',
+					'Content-Type': 'image/jpeg'
+					}
+				}
+				res.sendFile(path.join(__dirname, "../",data.path), options, function(err){
 					if(err){
 						console.log(err)
-					} else {
-						console.log("ok")
 					}
 				})
 			}
